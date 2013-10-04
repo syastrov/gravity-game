@@ -34,7 +34,7 @@ pygame.init()
 
 # Configuration
 FPS = 60
-SCREEN_WIDTH, SCREEN_HEIGHT = 1280, 1024
+SCREEN_WIDTH, SCREEN_HEIGHT = 800, 800
 FULLSCREEN = False
 
 background_color = (0, 0, 0)
@@ -179,7 +179,7 @@ def randomPosition():
   return random.randint(0, SCREEN_WIDTH), random.randint(0, SCREEN_HEIGHT)
 
 def main():
-  startGame(120)
+  startGame(60)
 
 def startGame(numChunks):
   global planet_pos, planet, chunks, elapsed
